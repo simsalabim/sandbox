@@ -1,0 +1,49 @@
+<div class="contents">
+
+  <div class="back">
+    <a href="/posts" class="back-link">&larr; back</a>
+  </div>
+  <div class="post">
+    <div class="post-header">
+      <span class="post-author">
+        <?php echo $user['nickname'] ?>
+      </span>
+      <span class="post-date">
+        <?php echo strftime("%d.%m.%Y, %H:%M",strtotime($post['created_at'] )) ?>
+      </span>
+    </div>
+    <div class="post-body">
+      <div class="post-title">
+        <?php echo ucfirst($post['title']) ?>
+      </div>
+      <?php echo $post['body'] ?>
+    </div>
+    <div class="post-footer no-border-top"></div>
+  </div>
+
+  <div class="comments">
+    <h3>Comments (<?php echo count($comments) ?>)</h3>
+    <?php foreach ($comments as $key =>$comment) :?>
+      <div class="comment <?php echo $key % 2 == 0 ?"even" : "odd" ?>">
+        <div class="comment-body">
+          <?php echo $comment['body'] ?>
+        </div>
+        <div class="comment-footer">
+          <div class="comment-author">
+            <?php echo $comment['user']['nickname'] ?>,
+            <?php echo strftime("%d.%m.%Y, %H:%M",strtotime($comment['created_at'] )) ?>
+          </div>
+        </div>
+      </div>
+    <?php endforeach; ?>
+    <div class="comment new">
+      <form name="comment" method="post" action="/comments/create">
+        <input type="hidden" name="commentable_id" value="<?php echo $post['id'] ?>" />
+        <input type="hidden" name="commentable_type" value="posts" />
+        <textarea rows="5" cols="30" name="body"></textarea>
+        <input type="submit" value="Comment" />
+      </form>
+    </div>
+  </div>
+
+</div>

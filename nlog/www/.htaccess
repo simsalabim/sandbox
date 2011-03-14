@@ -1,0 +1,15 @@
+RewriteEngine On
+
+RewriteBase /
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php
+
+php_value default_charset utf-8
+php_value mbstring.func_overload 6
+php_value mbstring.internal_encoding UTF-8
+php_value mbstring.http_output pass
+php_value mbstring.http_input pass
+php_value mbstring.encoding_translation 0

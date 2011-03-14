@@ -1,0 +1,108 @@
+.contents-wrap {
+  width: 600px;
+  min-height: 800px;
+  margin: 0 auto;
+}
+
+.contents {
+  margin: 50px 0 0 0;
+}
+
+.post {
+  margin: 0 0 10px 0;
+}
+
+.post-header {
+  background: #6B8FD4;
+  color: #FFF;
+  padding: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+}
+
+.post-title {
+  padding: 0px 0 5px 10px;
+  font-weight: bold;
+}
+
+.post-date {
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.post-body {
+  border: 1px solid #05296E;
+  border-top: 0 none;
+  min-height: 80px;
+  margin-bottom: -20px;
+  padding: 10px 5px 5px 5px;
+}
+
+.post-footer {
+  height: 20px;
+  font-size: 11px;
+  background: #FFF;
+  color: #FFF;
+  border: 1px solid #05296E;
+}
+
+a.comment-link {
+  float: right;
+  margin: 0 15px 0 0;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dashed #4751BF;
+}
+a.comment-link:hover {
+  border: 0 none;
+}
+
+.no-border-top {
+  border-top: 0 none;
+}
+
+.back {
+  margin: 0 0 10px 0;
+}
+
+.comments {
+ margin: 20px 0 0 0;
+}
+.comment {
+  min-height: 30px;
+  border: 1px solid #1144AA;
+  padding: 3px 0 0 3px;
+}
+.comments .even {
+  background: #65A5D1;
+  color: #FFF;
+}
+.comments .odd {
+  background: #FFF;
+}
+
+.comment-author {
+  text-align: right;
+  padding: 0 5px 0 0;
+}
+.error {
+  color: #FF0F0F;
+}
+
+.login-form {
+  margin-top: 300px;
+  text-align: center;
+}
+
+.access-denied {
+  font-size: 36px;
+  font-weight: bold;
+  color: #CF1919;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.top-links {
+  margin: 0 0 10px 0;
+}

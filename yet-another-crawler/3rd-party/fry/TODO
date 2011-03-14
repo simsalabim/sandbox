@@ -1,0 +1,4 @@
+* Write some basic filters, for example a newline stripper.
+* Write new examples with filter usage and with cache
+* Add configurable error handling, print them as they are printed now or inline in template
+* Write more default FryHelpers

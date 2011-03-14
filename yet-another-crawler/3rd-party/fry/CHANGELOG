@@ -1,0 +1,32 @@
+0.9.8.2 (2007-10-21)
+	* Wrapper method for calling filters
+	* Minor changes
+	  Thanks to Milian Wolff for good ideas
+0.9.8.1 (2007-10-06)
+	* Local autoload (backward compatibility break, PHP 5 >= 5.1.2)
+	* Various dictionary implementations and a factory to load them
+	* Minor changes
+0.9.7.1 (2007-08-17)
+	* Some file reorganization, no separate files for exceptions
+0.9.7.0 (2007-07-29)
+	* Cache functionality
+0.9.6.3 (2007-07-19)
+	* Fixed a bug - Fry::set() always throwed an exception. Too much night coding...
+	  Thanks again to David Ordal for finding this problem.
+0.9.6.2 (2007-07-17)
+	* Fixed another big bug on getting FryFilterCaller instance (was I sleeping?).
+	  getInstance() always returned a new instance of FryFilterCaller.
+0.9.6.1 (2007-07-11)
+	* Fixed bug on getting FryFilterCaller instance, forgot to set a new value.
+	  Thanks to Šarūnas Dubinskas for pointing this out.
+0.9.6 (2007-07-11)
+	* Added FryFilter functionality, works in a similar way as helpers.
+	* StrToUpper and LeaveNumbers filters, basically for testing :)
+0.9.5.2 (2007-07-09)
+	* Fixed broken FryDictionaryException in FryDictionary
+0.9.5.1 (2007-07-05)
+	* Fixed a bug - wrong exception on getting an empty variable in template - 
+	  which occurred after adding a dictionary (0.9.5). 
+	  Thanks to David Ordal for finding this problem.
+0.9.5 (2007-06-24)
+	* Dictionary functionality for i18n

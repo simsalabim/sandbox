@@ -1,0 +1,35 @@
+<div class="contents">
+
+  <div class="top-links">
+    <?php if (in_array('editor', $user['roles'])): ?>
+      <a href="/posts/create" class="">+ Add post</a>
+    <?php else: ?>
+      <a href="/" class="">Login page</a>
+    <?php endif ?>
+  </div>
+
+  <?php foreach ($posts as $post): ?>
+    <div class="post">
+      <div class="post-header">
+          <span class="post-author">
+            <?php echo $post['user']['nickname'] ?>
+          </span>
+          <span class="post-date">
+            <?php echo strftime("%d.%m.%Y, %H:%M",strtotime($post['created_at'] )) ?>
+          </span>
+      </div>
+      <div class="post-body">
+        <div class="post-title">
+          <?php echo ucfirst($post['title']) ?>
+        </div>
+        <?php echo $post['body'] ?>
+      </div>
+      <div class="post-footer">
+        <a href="/posts/show?id=<?php echo $post['id'] ?>" class="comment-link">
+          comments (<?php echo count($post['comments']) ?>)
+        </a>
+      </div>
+    </div>
+  <?php endforeach ?>
+
+</div>

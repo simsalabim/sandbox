@@ -1,0 +1,23 @@
+* {
+  font-family: Verdana, Arial, san-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 0 20px 0 20px;
+}
+
+.logo{
+  text-align: center;
+  margin: 100px 0 0 0;
+}
+
+
+.advertisement{
+  font-family: 'Reenie Beanie', serif;
+  font-size: 48px;
+  margin: 15px 0 0 0;
+}
+

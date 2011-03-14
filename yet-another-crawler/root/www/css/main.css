@@ -1,0 +1,89 @@
+* {
+  font-family: Verdana, Arial, san-serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 0 20px 0 20px;
+}
+
+.choice {
+  border: 1px solid #8F8F8F;
+  padding: 10px 0 0 0;
+  height: 160px;
+  width: 600px;
+  margin: 40px auto 40px auto;
+}
+
+.group {
+  float: left;
+  margin: 10px;
+}
+
+.filters{
+  display: inline;
+}
+
+.selection {
+  margin: 10px;
+}
+
+.selection .input {
+  border: 1px solid #8F8F8F;
+  padding: 2px;
+}
+
+.submit {
+  clear: both;
+  padding: 25px 0 0 0;
+}
+
+.submit-button {
+  width: 70px;
+  height: 25px;
+  border: 1px solid #8F8F8F;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+
+.results {
+  width: 100%;
+  border: 1px solid #8F8F8F;
+  border-collapse: collapse;
+}
+
+.results tr td {
+  border: 1px solid #8F8F8F;
+  padding: 3px;
+}
+
+.table-header {
+  background: #CFCFCF;
+  height: 25px;
+  padding: 2px;
+}
+
+.odd {
+  background: #CCCCFF;
+}
+
+.even {
+  background: #FFFFFF;
+}
+
+
+#indicator {
+  width: 32px;
+  height: 32px;
+}
+
+.spin{
+  display: none;
+  background: url("/img/ajax-loader.gif") no-repeat;
+  width: 32px;
+  height: 32px;
+}

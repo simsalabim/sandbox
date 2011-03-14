@@ -1,0 +1,12 @@
+paths:
+  app:
+    libs: ../app/libs
+    views: ../app/views
+    controllers: ../app/controllers
+    cache: ../app/cache
+    adapters:
+      common: adapters
+      templates: view
+  third_party: ../../3rd-party
+templates:
+  adapter: Smarty

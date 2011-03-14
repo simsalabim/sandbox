@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE fry>
+<fry>
+	<templatePaths>
+		<path>templates</path>
+		<path>some_other_dir</path>
+	</templatePaths>
+</fry>

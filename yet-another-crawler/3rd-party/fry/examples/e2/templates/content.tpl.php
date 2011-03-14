@@ -1,0 +1,1 @@
+<?php echo $this->filter($this->text)->lower()->get() ?>

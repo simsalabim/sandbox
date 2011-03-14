@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE fry>
+<fry>
+	<templatePaths>
+		<path>templates</path>
+		<path>tests/tpl</path>
+	</templatePaths>
+	
+	<userHelpersDir>hlp</userHelpersDir>
+</fry>
